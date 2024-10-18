@@ -10,7 +10,7 @@
 )]
 #![forbid(unsafe_code)]
 
-use ark_ff::{PrimeField, ToBytes};
+use ark_ff::{PrimeField};
 use ark_relations::r1cs::ConstraintSynthesizer;
 use ark_std::rand::{CryptoRng, RngCore};
 use core::fmt::Debug;
@@ -23,7 +23,7 @@ pub trait SNARK<F: PrimeField> {
 
     /// The information required by the verifier to check a proof for a specific
     /// circuit *C*.
-    type VerifyingKey: Clone + ToBytes;
+    type VerifyingKey: Clone;       // TODO: deleted + ark_ff::ToBytes
 
     /// The proof output by the prover.
     type Proof: Clone;

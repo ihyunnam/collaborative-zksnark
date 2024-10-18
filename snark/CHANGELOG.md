@@ -1,4 +1,4 @@
-## v0.2.0
+## v0.4.0
 
 ### Breaking changes
 - [\#334](https://github.com/arkworks-rs/snark/pull/334) Outlining linear combinations is now specified via the optimization goal interface.
