@@ -235,9 +235,9 @@ pub mod curves {
         short_weierstrass_jacobian::GroupProjective as SWProjective,
         twisted_edwards_extended::GroupProjective as TEProjective, ProjectiveCurve,
     };
-    use ark_ff::{BitIteratorLE, Field, FpParameters, One, PrimeField};
+    use ark_ff::{BitIteratorLE, Field, FpParameters, One, PrimeField, UniformRand};     // moved from ark_std
     use ark_relations::r1cs::{ConstraintSystem, SynthesisError};
-    use ark_std::{test_rng, vec::Vec, UniformRand};
+    use ark_std::{test_rng, vec::Vec};
 
     use ark_r1cs_std::prelude::*;
 
@@ -526,10 +526,10 @@ pub mod curves {
 
 pub mod pairing {
     use ark_ec::{PairingEngine, ProjectiveCurve};
-    use ark_ff::{BitIteratorLE, Field, PrimeField};
+    use ark_ff::{BitIteratorLE, Field, PrimeField, UniformRand};        // moved from ark_std
     use ark_r1cs_std::prelude::*;
     use ark_relations::r1cs::{ConstraintSystem, SynthesisError};
-    use ark_std::{test_rng, vec::Vec, UniformRand};
+    use ark_std::{test_rng, vec::Vec};
 
     #[allow(dead_code)]
     pub fn bilinearity_test<E: PairingEngine, P: PairingVar<E>>() -> Result<(), SynthesisError>

@@ -32,16 +32,16 @@ ark-ec = { version = "^0.2.0", default-features = false }
 ark-ff = { version = "^0.2.0", default-features = false }
 ark-serialize = { version = "^0.2.0", default-features = false }
 
-ark-mnt4-298 = { path = "../mnt4_298" }
-ark-mnt6-298 = { path = "../mnt6_298" }
-ark-mnt4-753 = { path = "../mnt4_753" }
-ark-mnt6-753 = { path = "../mnt6_753" }
-ark-bn254 = { path = "../bn254" }
+#ark-mnt4-298 = { path = "../mnt4_298" }
+#ark-mnt6-298 = { path = "../mnt6_298" }
+#ark-mnt4-753 = { path = "../mnt4_753" }
+#ark-mnt6-753 = { path = "../mnt6_753" }
+#ark-bn254 = { path = "../bn254" }
 ark-bls12-377 = { path = "../bls12_377" }
 ark-bls12-381 = { path = "../bls12_381" }
 ark-ed-on-bls12-381 = { path = "../ed_on_bls12_381" }
-ark-bw6-761 = { path = "../bw6_761" }
-ark-cp6-782 = { path = "../cp6_782" }
+#ark-bw6-761 = { path = "../bw6_761" }
+#ark-cp6-782 = { path = "../cp6_782" }
 
 [features]
 asm = [ "ark-ff/asm"]

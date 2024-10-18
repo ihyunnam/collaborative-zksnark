@@ -13,15 +13,15 @@ license = "MIT/Apache-2.0"
 edition = "2018"
 
 [dependencies]
-ark-ed-on-cp6-782 = { version = "^0.2.0", path = "../ed_on_cp6_782", default-features = false }
+#ark-ed-on-cp6-782 = { version = "^0.2.0", path = "../ed_on_cp6_782", default-features = false }
 
 [dev-dependencies]
 ark-relations = { version = "^0.2.0", default-features = false }
 ark-r1cs-std = { version = "^0.2.0", default-features = false }
 ark-ff = { version = "^0.2.0", default-features = false }
-ark-std = { path = "../util",  path = "../util", default-features = false }
+ark-std = { path = "../../utils",   default-features = false }
 
 [features]
 default = []
-std = [ "ark-ed-on-cp6-782/std" ]
-r1cs = [ "ark-ed-on-cp6-782/r1cs" ]
+#std = [ "ark-ed-on-cp6-782/std" ]
+#r1cs = [ "ark-ed-on-cp6-782/r1cs" ]
