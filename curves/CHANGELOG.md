@@ -1,7 +1,7 @@
-## v0.2.0
+## v0.4.0
 
 ### Breaking changes
-- Requires all crates from `arkworks-rs/algebra` to have version `v0.2.0` or greater.
+- Requires all crates from `arkworks-rs/algebra` to have version `v0.4.0` or greater.
 
 ### Features
 - [\#3](https://github.com/arkworks-rs/curves/pull/3) Add constraints for
